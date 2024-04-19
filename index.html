@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CARD</title>
+    <style>
+      html {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        margin: 0px;
+        padding: 0px;
+        background-image: url(flag.jpg);
+        background-position: center;
+        background-attachment: fixed;
+      }
+      .card:hover {
+        transform: scale(105%);
+        transition-timing-function: ease-in-out;
+        transition-duration: 0.3s;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+      }
+      .container :hover {
+        /* background-color: rgb(219, 213, 213); */
+        color: rgb(7, 98, 126);
+        border-color: black;
+      }
+      .card {
+        margin: 35px;
+        background-color: ivory;
+        width: 200px;
+        height: 420px;
+        border-radius: 19px;
+        padding: 10px;
+        overflow: hidden;
+        transition: ease-in-out;
+      }
+      .card :hover {
+        background-color: rgb(87, 46, 46);
+        border-width: 3px;
+      }
+      .image {
+        padding: 0.3rem;
+      }
+
+      .content {
+        overflow: hidden;
+        margin-top: 10px;
+      }
+      .content p {
+        font-size: 0.7rem;
+      }
+      .shadow {
+        margin: 0px;
+        justify-content: left;
+        color: rgb(165, 73, 73);
+      }
+      .capsules li {
+        display: inline;
+        margin: 0.1rem;
+        justify-content: left;
+        background-color: rgb(199, 195, 190);
+        padding: 5px 7px;
+        border: 2px solid;
+        border-radius: 14px;
+        font-size: 75%;
+        cursor: pointer;
+      }
+      .capsules :hover {
+        color: blanchedalmond;
+        background-color: chocolate;
+      }
+      .button {
+        display: flex;
+        justify-content: center;
+      }
+      .button button {
+        padding: px;
+        font-size: 0.8rem;
+        font-weight: 100;
+        border: none;
+        margin: 2px;
+        border-radius: 9px;
+        background-color: rgb(168, 168, 230);
+        font-weight: bold;
+        cursor: pointer;
+        font-family: monospace;
+      }
+      .button :hover {
+        font-weight: bold;
+        border: none;
+        border-radius: 9px;
+        background-color: rgb(0, 0, 0);
+        color: ivory;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card luffy">
+        <div class="image">
+          <img width="190" class="im" src="luffy.jpg" alt="" />
+        </div>
+        <div class="capsules">
+          <li>Anime</li>
+          <li>One Piece</li>
+        </div>
+        <div class="content">
+          <h1 class="shadow red">Luffy</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
+            nesciunt perferendis facere rerum accusantium odio ratione magnam a
+            in, velit qui minima veritatis saepe atque ipsum mollitia ab sed
+            quae voluptatum placeat cum odit quia? Quas perspiciatis id,
+            perferendis exercitationem delectus obcaecati similique!
+          </p>
+        </div>
+        <div class="button">
+          <button>Read more</button>
+        </div>
+      </div>
+      <div class="card zoro">
+        <div class="image">
+          <img width="190" class="im" src="zoro.jpg" alt="" />
+        </div>
+        <div class="capsules">
+          <li>Anime</li>
+          <li>One Piece</li>
+        </div>
+        <div class="content">
+          <h1 class="shadow">Zoro</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
+            nesciunt perferendis facere rerum accusantium odio ratione magnam a
+            in, velit qui minima veritatis saepe atque ipsum mollitia ab sed
+            quae voluptatum placeat cum odit quia? Quas perspiciatis id,
+            perferendis exercitationem delectus obcaecati similique!
+          </p>
+        </div>
+        <div class="button">
+          <button>Read more</button>
+        </div>
+      </div>
+      <div class="card nami">
+        <div class="image">
+          <img width="190" class="im" src="nami.jpg" alt="" />
+        </div>
+        <div class="capsules">
+          <li>Anime</li>
+          <li>One Piece</li>
+        </div>
+        <div class="content">
+          <h1 class="shadow">Nami</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
+            nesciunt perferendis facere rerum accusantium odio ratione magnam a
+            in, velit qui minima veritatis saepe atque ipsum mollitia ab sed
+            quae voluptatum placeat cum odit quia? Quas perspiciatis id,
+            perferendis exercitationem delectus obcaecati similique!
+          </p>
+          <div class="button">
+            <button>Read more</button>
+          </div>
+        </div>
+      </div>
+      <div class="card usopp">
+        <div class="image">
+          <img width="190" class="im" src="usopp.jpg" alt="" />
+        </div>
+        <div class="capsules">
+          <li>Anime</li>
+          <li>One Piece</li>
+        </div>
+        <div class="content">
+          <h1 class="shadow">Usopp</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
+            nesciunt perferendis facere rerum accusantium odio ratione magnam a
+            in, velit qui minima veritatis saepe atque ipsum mollitia ab sed
+            quae voluptatum placeat cum odit quia? Quas perspiciatis id,
+            perferendis exercitationem delectus obcaecati similique!
+          </p>
+          <div class="button">
+            <button>Read more</button>
+          </div>
+        </div>
+      </div>
+      <div class="card sanji">
+        <div class="image">
+          <img width="190" class="im" src="card.jpg" alt="" />
+        </div>
+        <div class="capsules">
+          <li>Anime</li>
+          <li>One Piece</li>
+        </div>
+        <div class="content">
+          <h1 class="shadow">Sanji</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
+            nesciunt perferendis facere rerum accusantium odio ratione magnam a
+            in, velit qui minima veritatis saepe atque ipsum mollitia ab sed
+            quae voluptatum placeat cum odit quia? Quas perspiciatis id,
+            perferendis exercitationem delectus obcaecati similique!
+          </p>
+          <div class="button">
+            <button>Read more</button>
+          </div>
+        </div>
+      </div>
+      <div class="card chopper">
+        <div class="image">
+          <img width="190" class="im" src="chopper.jpg" alt="" />
+        </div>
+        <div class="capsules">
+          <li>Anime</li>
+          <li>One Piece</li>
+        </div>
+        <div class="content">
+          <h1 class="shadow">Chopper</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
+            nesciunt perferendis facere rerum accusantium odio ratione magnam a
+            in, velit qui minima veritatis saepe atque ipsum mollitia ab sed
+            quae voluptatum placeat cum odit quia? Quas perspiciatis id,
+            perferendis exercitationem delectus obcaecati similique!
+          </p>
+          <div class="button">
+            <button>Read more</button>
+          </div>
+        </div>
+      </div>
+      <div class="card robin">
+        <div class="image">
+          <img width="190" class="im" src="robin.jpg" alt="" />
+        </div>
+        <div class="capsules">
+          <li>Anime</li>
+          <li>One Piece</li>
+        </div>
+        <div class="content">
+          <h1 class="shadow">Robin</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
+            nesciunt perferendis facere rerum accusantium odio ratione magnam a
+            in, velit qui minima veritatis saepe atque ipsum mollitia ab sed
+            quae voluptatum placeat cum odit quia? Quas perspiciatis id,
+            perferendis exercitationem delectus obcaecati similique!
+          </p>
+          <div class="button">
+            <button>Read more</button>
+          </div>
+        </div>
+      </div>
+      <div class="card franky">
+        <div class="image">
+          <img width="190" class="im" src="franky.jpg" alt="" />
+        </div>
+        <div class="capsules">
+          <li>Anime</li>
+          <li>One Piece</li>
+        </div>
+        <div class="content">
+          <h1 class="shadow">Franky</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
+            nesciunt perferendis facere rerum accusantium odio ratione magnam a
+            in, velit qui minima veritatis saepe atque ipsum mollitia ab sed
+            quae voluptatum placeat cum odit quia? Quas perspiciatis id,
+            perferendis exercitationem delectus obcaecati similique!
+          </p>
+          <div class="button">
+            <button>Read more</button>
+          </div>
+        </div>
+      </div>
+      <div class="card brook">
+        <div class="image">
+          <img width="190" class="im" src="Brook.webp" alt="" />
+        </div>
+        <div class="capsules">
+          <li>Anime</li>
+          <li>One Piece</li>
+        </div>
+        <div class="content">
+          <h1 class="shadow">Brook</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
+            nesciunt perferendis facere rerum accusantium odio ratione magnam a
+            in, velit qui minima veritatis saepe atque ipsum mollitia ab sed
+            quae voluptatum placeat cum odit quia? Quas perspiciatis id,
+            perferendis exercitationem delectus obcaecati similique!
+          </p>
+          <div class="button">
+            <button>Read more</button>
+          </div>
+        </div>
+      </div>
+      <div class="card jimbei">
+        <div class="image">
+          <img width="190" class="im" src="jimbei.jpg" alt="" />
+        </div>
+        <div class="capsules">
+          <li>Anime</li>
+          <li>One Piece</li>
+        </div>
+        <div class="content">
+          <h1 class="shadow">Jimbei</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
+            nesciunt perferendis facere rerum accusantium odio ratione magnam a
+            in, velit qui minima veritatis saepe atque ipsum mollitia ab sed
+            quae voluptatum placeat cum odit quia? Quas perspiciatis id,
+            perferendis exercitationem delectus obcaecati similique!
+          </p>
+          <div class="button">
+            <button>Read more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
